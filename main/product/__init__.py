@@ -1,4 +1,4 @@
-from .trianguloABC import TrianguloABC as TrianguloObjectABC
-from .isosceles import Isosceles as IsoscelesObject
-from .escaleno import Escaleno as EscalenoObject
-from .equilatero import Equilatero as EquilateroObject
+from .trianguloProductABC import TrianguloProductABC
+from .isoscelesProduct import IsoscelesProduct
+from .escalenoProduct import EscalenoProduct
+from .equilateroProduct import EquilateroProduct

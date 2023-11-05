@@ -1,2 +1,2 @@
-from .trianguloABC import TrianguloABC as TrianguloFactoryABC
-from .triangulo import Triangulo as TrianguloFactory
+from .trianguloFactoryABC import TrianguloFactoryABC
+from .trianguloFactory import TrianguloFactory

@@ -1,5 +1,5 @@
 from main.factory import TrianguloFactory, TrianguloFactoryABC
-from main.product import TrianguloObjectABC, IsoscelesObject, EquilateroObject, EscalenoObject
+from main.product import TrianguloProductABC
 
 class Cliente():
 
@@ -18,5 +18,5 @@ class Cliente():
                 except:
                     print("\n\nFormato Incorrecto")
                     continue
-        trianguloObject: TrianguloObjectABC = trianguloFactory.createTriangulo(data[0], data[1], data[2])
-        print(trianguloObject.getDescripcion())
+        trianguloProduct: TrianguloProductABC = trianguloFactory.createTriangulo(data[0], data[1], data[2])
+        print(trianguloProduct.getDescripcion())

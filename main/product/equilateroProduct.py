@@ -1,9 +1,9 @@
-from . import TrianguloObjectABC
+from . import TrianguloProductABC
 
-class Escaleno(TrianguloObjectABC):
+class EquilateroProduct(TrianguloProductABC):
 
     def getDescripcion(self) -> str:
-        return "Es un triangulo Escaleno"
+        return "Soy un triangulo Equilatero"
 
     def getSuperficie(self, base: float, altura: float) -> float:
         return base * altura

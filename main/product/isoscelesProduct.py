@@ -1,6 +1,6 @@
-from . import TrianguloObjectABC
+from . import TrianguloProductABC
 
-class Isosceles(TrianguloObjectABC):
+class IsoscelesProduct(TrianguloProductABC):
 
     def getDescripcion(self) -> str:
         return "Es un triangulo Isosceles"

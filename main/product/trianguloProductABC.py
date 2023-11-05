@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
 
-class TrianguloABC(metaclass = ABCMeta):
+class TrianguloProductABC(metaclass = ABCMeta):
 
     def __init__(self, ladoA: int, ladoB: int, ladoC: int) -> None:
         self.ladoA = ladoA
