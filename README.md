@@ -1,1 +1,2 @@
-# Patrones_de_Disenio_DS_2023
+# Chain of Responsibility
+## Ejecutar el archivo "run.py" para correr el codigo de ejemplo.
