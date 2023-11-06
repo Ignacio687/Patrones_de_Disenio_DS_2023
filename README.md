@@ -1,1 +1,2 @@
-# Patrones_de_Disenio_DS_2023
+# Command
+## Ejecutar el archivo "run.py" para correr el codigo de ejemplo.
