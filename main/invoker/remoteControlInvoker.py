@@ -2,11 +2,12 @@ from main.command import CommandABC
 
 class RemoteControlInvoker():
     def __init__(self):
-        self._command = None
+        self._command: list[CommandABC] = []
 
-    def set_command(self, command: CommandABC):
-        self._command = command
+    def add_command(self, command: CommandABC):
+        self._command.append(command)
 
     def press_button(self):
-        if self._command:
-            self._command.execute()
+        for commandCount in range(0, len(self._command)):
+            command = self._command.pop(0)
+            command.execute()
