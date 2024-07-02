@@ -1,1 +1,1 @@
-from .main import Cliente
+from .main import Cliente, ClienteConfig

@@ -8,3 +8,6 @@ class FactoryLcdBlue(TVFactoryABC):
 
     def createTV(self, color: Color) -> TV:
         return LCD( brand="TCL", inches=55, color=color, price=54000, manufacturingCost=32000)
+
+    def showTVdetails(self, tv: TV) -> None:
+        print(f"Costo de produccion: {tv.getManufacturingCost()}")

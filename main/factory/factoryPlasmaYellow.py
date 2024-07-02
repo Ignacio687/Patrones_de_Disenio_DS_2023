@@ -8,3 +8,7 @@ class FactoryPlasmaYellow(TVFactoryABC):
 
     def createTV(self, color: Color) -> TV:
         return Plasma(brand="Samsung", inches=45, color=color, price=55000, visionAngle=175, responseTime=1)
+    
+    def showTVdetails(self, tv: TV) -> None:
+        print(f"Angulo de vision: {tv.getVisionAngle()}")
+        print(f"Tiempo de respuesta: {tv.getResponseTime()}")

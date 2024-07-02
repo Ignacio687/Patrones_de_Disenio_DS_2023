@@ -1,5 +1,6 @@
-from main import Cliente
+from main import ClienteConfig
 
 if __name__ == "__main__":
-    cliente = Cliente()
+    clienteConf = ClienteConfig()
+    cliente = clienteConf.main()
     cliente.run()

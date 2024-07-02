@@ -1,13 +1,19 @@
-from main.factory import FactoryLcdBlue, FactoryPlasmaYellow
+from main.factory import FactoryLcdBlue, FactoryPlasmaYellow, TVFactoryABC
+from main.product import TV, LCD, plasma
 
 class Cliente():
+    def __init__(self, factory: TVFactoryABC) -> None:
+        self.factory = factory
 
     def run(self):
-        factoryLCD = FactoryLcdBlue()
-        tv = factoryLCD.assemble()
-        print(f"Costo de produccion: {tv.getManufacturingCost()}")
-        print("\n")
-        factoryPlasma = FactoryPlasmaYellow()
-        tv = factoryPlasma.assemble()
-        print(f"Angulo de vision: {tv.getVisionAngle()}")
-        print(f"Tiempo de respuesta: {tv.getResponseTime()}")
+        self.factory.assemble()
+        
+class ClienteConfig():
+    def main(self) -> Cliente:
+        while True:
+            tvTipe = input("Seleccione una opcion(escriba el número correspondiente):"
+                           + "\n1 - LCD\n2 - plasma\n").strip()
+            if tvTipe == "1":
+                return Cliente(FactoryLcdBlue())
+            elif tvTipe == "2":
+                return Cliente(FactoryPlasmaYellow())
