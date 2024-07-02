@@ -7,7 +7,7 @@ class AutoDirector():
 
     @property
     def builder(self) -> AutoBuilderABC:
-        return self._builder.product
+        return self._builder
 
     @builder.setter
     def builder(self, builder: AutoBuilderABC) -> None:
